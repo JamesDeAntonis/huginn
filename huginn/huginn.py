@@ -8,12 +8,13 @@ from .articles import get_articles_title_text_images_all_dates
 # from .summarizer import lda_filter_articles_anomalies, get_summaries_by_topic, run_summary
 
 class Huginn:
-    def __init__(self, keyword):
+    def __init__(self, keyword, mid=True):
         """Create a Huginn object
         :argument keyword: person or entity you would like information about
         """
         self.name = keyword
-        self.__mid = get_mid(self.name) #private attribute
+        if mid: self.__mid = get_mid(self.name) #private attribute
+        else: self.__mid = None
         self.interest = get_interest(self.name, self.__mid)
 
     def get_anomalies(self, method="ewm", **kwargs):
