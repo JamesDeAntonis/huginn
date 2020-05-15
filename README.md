@@ -1,3 +1,6 @@
+NOTE: THIS IS THE FORKED VERSION THATS USED IN THE WEB APP.  FOR THE FULL SUITE OF CAPABILITIES, GO TO THE ORIGINAL REPO (tcausero/huginn)
+
+
 # huginn
 Named for one of the Norse god Odin's ravens who would gather information for him. A package to facilitate the investigation of anomalous spikes in public interest in an entity, then fetch and summarize news stories relevant to those spikes.
 
