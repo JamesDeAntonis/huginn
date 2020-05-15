@@ -14,6 +14,7 @@ setup(name='huginn',
       license='MIT',
       packages=find_packages(exclude=('tests',)),
       include_package_data=True,
+      package_data={'config': ['config/*.txt']},
       python_requires='>=3.5, <3.7',
       install_requires=[
             'pandas',
